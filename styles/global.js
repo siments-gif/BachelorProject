@@ -5,11 +5,18 @@ export const globalStyles = StyleSheet.create({
 
     header: {
         width: '100%',
-        heihgt: '100%',
+        height: '100%',
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'gray',
+        backgroundColor: '#333',
+    },
+
+    headerText: {
+      fontWeight: 'bold',
+      fontSize: 20,
+      color: '#9923',
+      letterSpacing: 1,
     },
 
     /* Styles for container classes */
@@ -20,14 +27,14 @@ export const globalStyles = StyleSheet.create({
       backgroundColor: '#fff',
     },
 
-    Imagecontainer: {
+    imageContainer: {
         flex: 1,
         padding: 35,
         margin: 15,  
         backgroundColor: '#3939',
       },
 
-    /* Styles for titleText classes */
+      /* Styles for titleText classes */
     titleText: {
         fontSize: 40,
         textAlign: 'center',
@@ -41,6 +48,14 @@ export const globalStyles = StyleSheet.create({
         padding: 5,
         marginBottom: 20,
         borderStyle: 'dashed',
+    },
+
+    /* Styles for contactInfo class */
+    contactInfo: {
+      color: 'dark-blue',
+      fontSize: 20,
+      fontWeight: 'normal',
+      textAlign: 'center'
     },
 
     /* Styles for paragraph classes */

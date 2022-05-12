@@ -3,7 +3,7 @@ import { Text, View, Image} from 'react-native';
 import { globalStyles } from '../styles/global';
 import Header from '../shareDocs/header';
 
-export default function Home() {
+export default function Genres() {
 
     console.log(require('../assets/favicon.png'))
   

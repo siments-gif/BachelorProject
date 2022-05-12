@@ -12,9 +12,9 @@ export default function Header ({ navigation }) {
 
     return (
         <View style={globalStyles.header}>
-        <MaterialIcons name="menu" size={28} onPress={openMenu} style={styles.icon} />
+        <MaterialIcons name='menu' size={28} onPress={openMenu} style={styles.icon} />
            <View>
-           <Text style={globalStyles.headerText}></Text>
+           <Text style={globalStyles.headerText}>BachelorProject</Text>
            </View>
         </View>
     )
