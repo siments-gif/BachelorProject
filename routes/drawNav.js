@@ -8,13 +8,22 @@ import Review from '../screens/review';
 const drawNavigatorRoot = createDrawerNavigator({
     Home: {
         screen: Home,
+        navigationOptions: ({ navigation }) => {
+            return
+        },
     },
     About: {
         screen: About,
+        navigationOptions: {
+            title: 'About'
+        },
     },
 
     Review: {
-        screen: Review
+        screen: Review,
+        navigationOptions: {
+            title: 'Reviews'
+        },
     }
 })
 

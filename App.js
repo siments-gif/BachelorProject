@@ -5,7 +5,6 @@ import About from "./screens/about";
 import Navigator from './routes/drawNav';
 
 
-
 export default function App() {
     return (
         <Navigator />

@@ -2,7 +2,16 @@ import { StyleSheet } from "react-native";
 
 
 export const globalStyles = StyleSheet.create({
-    
+
+    header: {
+        width: '100%',
+        heihgt: '100%',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'gray',
+    },
+
     /* Styles for container classes */
     container: {
       flex: 1,
