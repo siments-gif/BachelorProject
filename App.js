@@ -4,13 +4,19 @@ import Review from "./screens/review";
 import About from "./screens/about";
 import Navigator from './routes/drawNav';
 import Header from "./shareDocs/header";
+import MaterialIcons from 'react-native-vector-icons'
+import Tabs from './routes/tabNav';
+import { NavigationContainer } from "@react-navigation/native";
 
 
-console.log(require('./shareDocs/header'))
-
-export default function App() {
+const App = () => {
+    
     return (
-        <Navigator>
-        </Navigator>
-    )
+        
+        <NavigationContainer>
+            <Tabs />
+        </NavigationContainer>       
+        )
 }
+
+export default App;

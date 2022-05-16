@@ -8,7 +8,7 @@ export default function Genres() {
     console.log(require('../assets/favicon.png'))
   
     return (
-    <View style={globalStyles.container}>
+    <View style={globalStyles.contentContainer}>
       <Text style={globalStyles.titleText}>Home</Text>
       <Image style={globalStyles.Image} source={require('../assets/favicon.png') } />
     </View>

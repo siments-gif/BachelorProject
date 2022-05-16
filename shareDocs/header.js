@@ -1,21 +1,24 @@
 import React from "react";
-import { View } from "react-native-web";
+import { View, SafeAreaView, Text } from "react-native";
 import {MaterialIcons} from '@expo/vector-icons';
 import { globalStyles } from "../styles/global";
 
-
-export default function Header ({ navigation }) {
-
-    const openMenu = () => {
-        navigation.openDraw()
-     }
-
+export default function Header() {
     return (
-        <View style={globalStyles.header}>
-        <MaterialIcons name='menu' size={28} onPress={openMenu} style={styles.icon} />
-           <View>
-           <Text style={globalStyles.headerText}>BachelorProject</Text>
-           </View>
-        </View>
-    )
-}
+        <SafeAreaView style={globalStyles.headerContainer}>
+          <View style={globalStyles.header}>
+            <Text style={globalStyles.headerText}>
+                BachelorProject </Text>
+          </View>
+        </SafeAreaView>
+
+        /* <SafeAreaView style={globalStyles.underHeader}>
+          <View>
+            <Text style={globalStyles.headerSubText}>
+                Mobile application for ios & android
+            </Text>
+          </View>
+        </SafeAreaView> */
+
+        
+    )};

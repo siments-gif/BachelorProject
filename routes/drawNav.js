@@ -7,7 +7,7 @@ import Review from '../screens/review';
 import Contact from '../screens/contact';
 import Genres from '../screens/genres';
 
-const drawNavigatorRoot = createDrawerNavigator({
+const drawNavigator = createDrawerNavigator({
     Home: {
         screen: Home,
         navigationOptions: ({ navigation }) => {
@@ -16,6 +16,7 @@ const drawNavigatorRoot = createDrawerNavigator({
             }
         },
     },
+
     About: {
         screen: About,
         navigationOptions: {
@@ -43,6 +44,7 @@ const drawNavigatorRoot = createDrawerNavigator({
             title: 'Genres'
         },
     },
+
 })
 
-export default createAppContainer(drawNavigatorRoot);
+export default createAppContainer(drawNavigator);

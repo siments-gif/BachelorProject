@@ -3,36 +3,56 @@ import { StyleSheet } from "react-native";
 
 export const globalStyles = StyleSheet.create({
 
+
+      /* Styles for header components */
+    
+    headerContainer: {
+      flex: 1,
+      
+    },
+  
     header: {
-        width: '100%',
-        height: '100%',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: '#333',
+      width: '100%',
+      height: '100%',
+      paddingTop: 22,
+      paddingLeft: 22,
+      position: 'absolute',
+      backgroundColor: '#c9c9c9',
+      alignItems: 'flex-start',
+      justifyContent: 'space-evenly',
     },
 
     headerText: {
       fontWeight: 'bold',
       fontSize: 20,
-      color: '#9923',
       letterSpacing: 1,
     },
 
-    /* Styles for container classes */
-    container: {
-      flex: 1,
-      padding: 35,
-      margin: 15,  
-      backgroundColor: '#fff',
+    headerSubText: {
+      fontWeight: 'normal',
+      fontSize: 16,
+      color: '#c0c0c0',
+      letterSpacing: 1,
     },
 
-    imageContainer: {
-        flex: 1,
-        padding: 35,
-        margin: 15,  
-        backgroundColor: '#3939',
-      },
+    /* Styles for content on Home screen */
+    contentContainer: {
+      width: '100%',
+      height: '89%',
+      backgroundColor: '#fff',
+      paddingBottom: 5,
+      flexDirection: 'row',
+      flexWrap: 'wrap'
+    },
+
+    homeImage: {
+      width: '100%',
+      height: '25%',
+      borderWidth: 3,
+      borderColor: 'black',
+      padding: 10,
+      backgroundColor: 'gray'
+    },
 
       /* Styles for titleText classes */
     titleText: {
@@ -40,7 +60,6 @@ export const globalStyles = StyleSheet.create({
         textAlign: 'center',
         color: 'green',
         borderWidth: 5,
-        borderColor: 'blue',
         borderBottomEndRadius: 100,
         borderBottomStartRadius: 100,
         borderTopEndRadius: 100,
@@ -52,7 +71,7 @@ export const globalStyles = StyleSheet.create({
 
     /* Styles for contactInfo class */
     contactInfo: {
-      color: 'dark-blue',
+      color: 'blue',
       fontSize: 20,
       fontWeight: 'normal',
       textAlign: 'center'
@@ -63,18 +82,5 @@ export const globalStyles = StyleSheet.create({
         marginVertical: 10,
         lineHeight: 25,
     },
-    Image: {
-        padding: 40,
-        margin: 10,
-        tintColor: 'gray',
-        borderWidth: 5,
-        borderColor: 'red',
-        borderStyle: 'dashed',
-        borderBottomEndRadius: 10,
-        borderBottomStartRadius: 10,
-        borderTopEndRadius: 10,
-        borderTopStartRadius: 10,
-        alignSelf: 'center'
-    }
   });
   
