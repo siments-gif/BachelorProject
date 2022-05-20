@@ -1,21 +1,21 @@
+ 
 import React from "react";
-import Home from './screens/home';
-import Review from "./screens/review";
-import About from "./screens/about";
-import Navigator from './routes/drawNav';
-import Header from "./shareDocs/header";
-import MaterialIcons from 'react-native-vector-icons'
-import Tabs from './routes/tabNav';
 import { NavigationContainer } from "@react-navigation/native";
+import { StackNavigator } from "./routes/stackNav";
+import { Tabs } from "./routes/tabNav";
+import Genres from "./screens/genres";
 
 
 const App = () => {
     
     return (
-        
         <NavigationContainer>
-            <Tabs />
-        </NavigationContainer>       
+            <StackNavigator />
+        </NavigationContainer>,
+
+        <NavigationContainer>
+         <Tabs />
+        </NavigationContainer> 
         )
 }
 

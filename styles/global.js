@@ -1,6 +1,5 @@
 import { StyleSheet } from "react-native";
 
-
 export const globalStyles = StyleSheet.create({
 
 
@@ -35,24 +34,68 @@ export const globalStyles = StyleSheet.create({
       letterSpacing: 1,
     },
 
-    /* Styles for content on Home screen */
+    /* Styles for Home screen */
+
+    container: {
+      flex: 1
+    },
+
     contentContainer: {
       width: '100%',
-      height: '89%',
-      backgroundColor: '#fff',
+      height: '100%',
+      backgroundColor: '#ececec',
       paddingBottom: 5,
-      flexDirection: 'row',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: "row",
       flexWrap: 'wrap'
     },
 
-    homeImage: {
+    homeText: {
+    paddingTop: 25,   
+    fontWeight: '600',
+    fontSize: 16,
+    letterSpacing: 3,
+    },
+
+    homeImages: {
       width: '100%',
-      height: '25%',
+      height: '20%',
       borderWidth: 3,
       borderColor: 'black',
       padding: 10,
       backgroundColor: 'gray'
     },
+
+    genresContainer: {
+      width: '100%',
+      height: '100%',
+      backgroundColor: '#fff',
+      paddingHorizontal: 50,
+      paddingTop: 50,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: "row",
+      flexWrap: 'wrap'
+    },
+    
+    item: {
+      marginTop: 24,
+      padding: 30,
+      fontSize: 20,
+    },
+
+    itemImages: {
+      width: '100%',
+      height: '100%',
+      borderWidth: 3,
+      borderColor: 'black',
+      padding: 10,
+      backgroundColor: 'gray'
+    },
+
 
       /* Styles for titleText classes */
     titleText: {
@@ -71,10 +114,37 @@ export const globalStyles = StyleSheet.create({
 
     /* Styles for contactInfo class */
     contactInfo: {
-      color: 'blue',
+      color: 'black',
       fontSize: 20,
-      fontWeight: 'normal',
-      textAlign: 'center'
+      fontWeight: '700',
+      textAlign: 'left',
+      paddingBottom: 70,
+    },
+
+    contactContainer: {
+      width: '100%',
+      height: '100%',
+      backgroundColor: '#ececec',
+      paddingHorizontal: 20,
+      paddingTop: 20,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: "row",
+      flexWrap: 'wrap'
+    },
+
+    items: {
+      paddingBottom: 20,
+    },
+
+
+    aboutText: {
+      color: 'black',
+      fontSize: 20,
+      fontWeight: '400',
+      textAlign: 'left',
+      paddingBottom: 70,
     },
 
     /* Styles for paragraph classes */
