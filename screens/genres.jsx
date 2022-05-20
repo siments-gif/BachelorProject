@@ -1,38 +1,40 @@
  
 import React from "react";
 import { View, Button, Text, StyleSheet } from "react-native";
+import { globalStyles } from "../styles/global";
 
 const Genres = ({ navigation }) => {
   return (
-    <View style={styles.center}>
-      <Text>This is the home screen</Text>
+     [<View style={globalStyles.headerContainer}>
+      <Text style={globalStyles.headerText}>
+        In this screen you can navigate between different genres of movies.
+        
+        </Text>
+      </View>,
+
+      <View style={globalStyles.stackNav}>
       <Button
+        style={globalStyles.button}
         title="Action"
-        onPress={() => navigation.navigate("Action")} // We added an onPress event which would navigate to the About screen
+        onPress={() => navigation.navigate("Action")}
       />
       <Button
+        style={globalStyles.button}
         title="Comedy"
-        onPress={() => navigation.navigate("Comedy")} // We added an onPress event which would navigate to the About screen
+        onPress={() => navigation.navigate("Comedy")}
       />
       <Button
+        style={globalStyles.button}
         title="Romance"
-        onPress={() => navigation.navigate("Romance")} // We added an onPress event which would navigate to the About screen
+        onPress={() => navigation.navigate("Romance")}
       />
       <Button
+        style={globalStyles.button}
         title="SciFi"
-        onPress={() => navigation.navigate("SciFi")} // We added an onPress event which would navigate to the About screen
+        onPress={() => navigation.navigate("SciFi")}
       />
-    </View>
+    </View>]
   );
 };
-
-const styles = StyleSheet.create({
-  center: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    textAlign: "center",
-  },
-});
 
 export default Genres;

@@ -24,7 +24,10 @@ export const globalStyles = StyleSheet.create({
     headerText: {
       fontWeight: 'bold',
       fontSize: 20,
-      letterSpacing: 1,
+      justifyContent: 'space-evenly',
+      paddingVertical: 50,
+      letterSpacing: 0,
+      textAlign: 'center'
     },
 
     headerSubText: {
@@ -79,6 +82,19 @@ export const globalStyles = StyleSheet.create({
       justifyContent: 'center',
       flexDirection: "row",
       flexWrap: 'wrap'
+    },
+
+    stackNav: {
+      flex: 1,
+      textAlign: "center",
+      padding: 20,
+      justifyContent: 'center'
+    },
+
+    button: {
+      marginBottom: 30,
+      padding: 10,
+      backgroundColor: 'red'
     },
     
     item: {
@@ -145,6 +161,26 @@ export const globalStyles = StyleSheet.create({
       fontWeight: '400',
       textAlign: 'left',
       paddingBottom: 70,
+    },
+
+    container: {
+      flex: 1,
+      marginHorizontal: 16
+    },
+    item: {
+      backgroundColor: "#ececec",
+      padding: 20,
+      marginVertical: 1
+    },
+    header: {
+      textAlign: 'center',
+      marginVertical: 10,
+      fontSize: 16,
+      backgroundColor: "#ececec"
+    },
+    title: {
+      textAlign: 'center',
+      fontSize: 14
     },
 
     /* Styles for paragraph classes */

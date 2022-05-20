@@ -9,7 +9,6 @@ const DATA = [
     title: "Information",
     data: [ 
       "We have not yet created an e-mail or phone number designated to customer support, but you can still reach the respective team members if you have any questions. We would be delighted to help you in any way we can!"
-      
     ]
   },
   
@@ -44,8 +43,8 @@ const DATA = [
 ];
 
 const Item = ({ title }) => (
-  <View style={styles.item}>
-    <Text style={styles.title}>{title}</Text>
+  <View style={globalStyles.item}>
+    <Text style={globalStyles.title}>{title}</Text>
   </View>
 );
 
@@ -56,7 +55,7 @@ const Contact = () => {
       keyExtractor={(item, index) => item + index}
       renderItem={({ item }) => <Item title={item} />}
       renderSectionHeader={({ section: { title } }) => (
-        <Text style={styles.header}>{title}</Text>
+        <Text style={globalStyles.header}>{title}</Text>
       )}
     />
   )};
