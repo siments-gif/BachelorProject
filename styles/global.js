@@ -23,7 +23,7 @@ export const globalStyles = StyleSheet.create({
 
     headerText: {
       fontWeight: 'bold',
-      fontSize: 20,
+      fontSize: 24,
       justifyContent: 'space-evenly',
       paddingVertical: 50,
       letterSpacing: 0,
@@ -43,7 +43,7 @@ export const globalStyles = StyleSheet.create({
       flex: 1
     },
 
-    contentContainer: {
+    homeContainer: {
       width: '100%',
       height: '100%',
       backgroundColor: '#ececec',
@@ -56,10 +56,12 @@ export const globalStyles = StyleSheet.create({
     },
 
     homeText: {
-    paddingTop: 25,   
-    fontWeight: '600',
-    fontSize: 16,
-    letterSpacing: 3,
+    paddingTop: 100,
+    textAlign: 'center',   
+    fontWeight: 'bold',
+    borderRadius: 20,
+    fontSize: 19,
+    letterSpacing: 1,
     },
 
     homeImages: {
@@ -70,6 +72,9 @@ export const globalStyles = StyleSheet.create({
       padding: 10,
       backgroundColor: 'gray'
     },
+
+
+    /* Styles for Genre screen and Stack Navigator */
 
     genresContainer: {
       width: '100%',
@@ -84,17 +89,34 @@ export const globalStyles = StyleSheet.create({
       flexWrap: 'wrap'
     },
 
+    genresBack: {
+      backgroundColor: '#fff',
+    },
+
     stackNav: {
-      flex: 1,
+      flex: 2,
+      paddingVertical: 20,
+      borderRadius: 60,
+      borderColor: '#ececec',
+      borderWidth: 5,
       textAlign: "center",
-      padding: 20,
-      justifyContent: 'center'
+      padding: 5,
+      margin: 5,
+      marginBottom: 0,
+      justifyContent: 'center',
+      backgroundColor: '#fff'
     },
 
     button: {
-      marginBottom: 30,
-      padding: 10,
-      backgroundColor: 'red'
+      marginBottom: 10,
+      padding: 2,
+      borderWidth: 10,
+      textAlign: "center",
+      margin: 20,
+      color: '#FFF',
+      marginBottom: 0,
+      justifyContent: 'center',
+      backgroundColor: '#fff'
     },
     
     item: {
@@ -114,6 +136,7 @@ export const globalStyles = StyleSheet.create({
 
 
       /* Styles for titleText classes */
+
     titleText: {
         fontSize: 40,
         textAlign: 'center',
@@ -129,6 +152,7 @@ export const globalStyles = StyleSheet.create({
     },
 
     /* Styles for contactInfo class */
+
     contactInfo: {
       color: 'black',
       fontSize: 20,
@@ -150,43 +174,124 @@ export const globalStyles = StyleSheet.create({
       flexWrap: 'wrap'
     },
 
-    items: {
-      paddingBottom: 20,
-    },
-
-
-    aboutText: {
-      color: 'black',
-      fontSize: 20,
-      fontWeight: '400',
-      textAlign: 'left',
-      paddingBottom: 70,
-    },
-
-    container: {
-      flex: 1,
-      marginHorizontal: 16
-    },
+    /* Different contact styles in List */
+    
     item: {
       backgroundColor: "#ececec",
-      padding: 20,
-      marginVertical: 1
+      marginVertical: 3
     },
     header: {
       textAlign: 'center',
-      marginVertical: 10,
-      fontSize: 16,
+      color: 'black',
+      padding: 25,
+      fontWeight: '700',
+      marginVertical: 7,
+      fontSize: 21,
       backgroundColor: "#ececec"
     },
     title: {
       textAlign: 'center',
-      fontSize: 14
+      fontWeight: '600',
+      fontSize: 16
     },
+
+
+    /* About screen styling */
+
+    aboutText: {
+      color: 'black',
+      fontSize: 19,
+      fontWeight: '500',
+      textAlign: 'center',
+      padding: 27,
+      borderWidth: 3,
+      backgroundColor: '#ececec'
+    },
+
+    aboutContainer: {
+      width: '100%',
+      height: '100%',
+      backgroundColor: '#fff',
+      paddingHorizontal: 20,
+      paddingTop: 20,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: "row",
+      flexWrap: 'wrap'
+    },
+
+
+    /* Policy screen styling */
+    
+    policyContainer: {
+      width: '100%',
+      height: '100%',
+      backgroundColor: '#fff',
+      paddingHorizontal: 20,
+      display: 'flex',
+      flexDirection: "column",
+      flexWrap: 'wrap'
+    },
+
+    policyHeader: {
+      paddingTop: 30,
+      textAlign: 'center',
+      paddingBottom: 30,
+      fontSize: 20,
+      fontWeight: 'bold'
+    },
+
+    policyList: {
+      paddingTop: 10,
+      fontSize: 17,
+      fontWeight: '600',
+      textAlign: 'center',
+      borderRightWidth: 2,
+      borderLeftWidth: 2,
+      borderTopWidth: 1,
+      borderBottomWidth: 1,
+      borderRadius: 5,
+      backgroundColor: '#ececec'
+    },
+    policyListTop: {
+      paddingTop: 10,
+      fontSize: 17,
+      fontWeight: '600',
+      textAlign: 'center',
+      borderTopWidth: 2,
+      borderBottomWidth: 1,
+      borderRightWidth: 2,
+      borderLeftWidth: 2,
+      borderRadius: 5,
+      backgroundColor: '#ececec'
+    },
+    policyListBot: {
+      paddingTop: 10,
+      fontSize: 17,
+      fontWeight: '600',
+      textAlign: 'center',
+      borderTopWidth: 1,
+      borderBottomWidth: 2,
+      borderRightWidth: 2,
+      borderLeftWidth: 2,
+      borderRadius: 5,
+      backgroundColor: '#ececec'
+    },
+
+    policyFooter: {
+      textAlign: 'center',
+      paddingTop: 40,
+      paddingBottom: 50,
+      fontSize: 19,
+    },
+
 
     /* Styles for paragraph classes */
     paragraph: {
         marginVertical: 10,
         lineHeight: 25,
     },
+
   });
   

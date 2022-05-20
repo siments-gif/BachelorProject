@@ -5,38 +5,36 @@ import { globalStyles } from "../styles/global";
 
 
 const DATA = [
-  {
-    title: "Information",
-    data: [ 
-      "We have not yet created an e-mail or phone number designated to customer support, but you can still reach the respective team members if you have any questions. We would be delighted to help you in any way we can!"
-    ]
-  },
-  
-  {
-    title: "Simen Tveitane Skogen",
-    data: [
-    "Role   -  Team leader",
-    "Phone   -   46471518",
-    "Gmail   -   sim1skogen@gmail.com"]
-  },
-  {
-    title: "Simen Tveitane Skogen",
-    data:[ 
-    "Role   -  Team leader",
-    "Phone   -    97502066",
-    "Gmail   -   akselnr.2@gmail.com"]
-  },
-  {
-    title: "Simen Tveitane Skogen",
-    data: [
-    "Role   -  Team leader",
-    "Phone   -   92060688",
-    "Gmail   -   Kristerlassen@gmail.com"]
-  },
+
+
   {
     title: "Simen Tveitane Skogen",
     data: [
     "Team leader",
+    "46471518",
+    "sim1skogen@gmail.com"]
+  },
+
+  {
+    title: "Aksel Sundberg Sundberg",
+    data:[ 
+    "Team member",
+    "97502066",
+    "akselnr.2@gmail.com"]
+  },
+
+  {
+    title: "Krister Lassen",
+    data: [
+    "Team member",
+    "92060688",
+    "Kristerlassen@gmail.com"]
+  },
+  
+  {
+    title: "Ivar Pettersen",
+    data: [
+    "Team member",
     " 95368075",
     "pettersen00@gmail.com"]
   },
