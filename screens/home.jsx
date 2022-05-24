@@ -1,6 +1,8 @@
 import React from 'react';
 import { Text, View, Image} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { StackNavigator } from '../routes/stackNav';
+import Header from '../shareDocs/header';
 import { globalStyles } from '../styles/global';
 
 export default function Home() {

@@ -6,18 +6,21 @@ import Genres from "./screens/genres";
 import Action from "./screens/action";
 import Comedy from "./screens/comedy";
 import { StackNavigator } from "./routes/stackNav";
+import Header from "./shareDocs/header";
 
 
 const App = () => {
 
     return (
-    <NavigationContainer>
-      <StackNavigator />
-    </NavigationContainer>,
 
+        <NavigationContainer>
+            <StackNavigator />
+        </NavigationContainer>,
+        
         <NavigationContainer>
          <Tabs />
         </NavigationContainer> 
+        
         )
 }
 

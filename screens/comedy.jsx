@@ -9,7 +9,7 @@ export default function Comedy() {
   
   return (
     <View style={globalStyles.contentContainer}>
-      <Text style={globalStyles.titleText}>About</Text>
+      <Text style={globalStyles.titleText}>Comedy</Text>
       <Image style={globalStyles.Image} source={require('../assets/favicon.png') } />
     </View>
   );

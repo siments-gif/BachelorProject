@@ -187,7 +187,7 @@ export const globalStyles = StyleSheet.create({
       fontWeight: '700',
       marginVertical: 7,
       fontSize: 21,
-      backgroundColor: "#ececec"
+      backgroundColor: "#fff"
     },
     title: {
       textAlign: 'center',

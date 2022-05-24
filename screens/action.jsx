@@ -9,7 +9,7 @@ const Action = ({ navigation }) => {
   
   return (
     <>
-      <Text style={globalStyles.titleText}>About</Text>
+      <Text style={globalStyles.titleText}>Action</Text>
       <Image style={globalStyles.Image} source={require('../assets/favicon.png') } />
     </>
   );
